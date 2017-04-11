@@ -40,8 +40,109 @@ footer{
   color: white;
   padding-top: 7px;
 }
+/***************************************************/
 .contenido{
   text-align: center;
   font-weight: 7px;
-  padding:0 70px; 
+  padding:0 70px;
+}
+
+
+#insertaImg div{
+  width: 340px;
+  height: 340px;
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+  margin-left: 30px;
+  margin-top: 30px;
+  margin:30px;
+}
+
+
+#insertaImg figure{
+  width: 300px;
+  height: 300px;
+  display: inline-block;
+  position: relative;
+  top:20px;
+  left: 20px;
+  box-sizing: border-box;
+  margin-left: 30px;
+  margin-top: 30px;
+  margin:0px;
+}
+
+
+
+#insertaImg img{
+  width: 300px;
+  height: 250px;
+  display: inline-block;
+  position: absolute;
+  top: 0px
+  left:0px;
+  box-sizing: border-box;
+  margin: 0;
+  position: absolute;
+  margin: 0px;
+}
+
+#insertaImg figcaption{
+ width: 300px;
+ position: absolute;
+ top: 250px;
+ left: 0;
+ height: 50px;
+ margin: 0px;
+ text-align: center;
+}
+
+#insertaImg{
+  width: 90%;
+margin: auto;
+}
+
+/***********************************CSS DE MI MODAL**********************************************/
+#miModal{
+  visibility: hidden;
+  opacity: 0;
+  margin-top: -300px;
+}
+
+:target{
+  visibility: visible;
+  opacity: 1;
+  background-color: rgba(0,0,0,0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+  z-index: 999;
+  -webkit-transition:all 1s;
+  -moz-transition:all 1s;
+  transition: all 1s;
+}
+.contenedor{
+  position: relative;
+  margin: 7% auto;
+  padding: 30px 50px;
+  background-color: #fafafa;
+  color:#333;
+  border-radius: 3px;
+  width: 50%;
+}
+
+a .cerrar{
+  position: absolute;
+  top:3px;
+  right: 3px;
+  background-color: #333;
+  padding: 7px 10px;
+  font-size: 20px;
+  text-decoration: none;
+  line-height: 1;
+  color:#fff;
 }

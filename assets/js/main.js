@@ -13,3 +13,7 @@ window.addEventListener('load',function(e) {
    document.getElementById("insertaImg").appendChild(div);
  }
 });
+
+document.getElementById("prueba").addEventListener("click" , function(){
+  alert("funciona");
+});
