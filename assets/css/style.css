@@ -1,130 +1,160 @@
-*{
-  margin:0;
-  padding: 0;
+* {
+    margin: 0;
+    padding: 0;
 }
-.link{
-  font-weight: 700;
-  padding: 21px;
-  display: inline-block;
+
+.link {
+    font-weight: 700;
+    padding: 21px;
+    display: inline-block;
 }
 
 .logo {
-  float:right;
+    float: right;
 }
 
-header{
-  position: fixed;
-  background: white;
-  width: 100%;
-  top: 0;
+header {
+    position: fixed;
+    background: white;
+    width: 100%;
+    top: 0;
+    z-index: 10;
 }
-.menu{
-  padding: 14px 70px;
-  overflow: auto;
+
+.menu {
+    padding: 14px 70px;
+    overflow: auto;
 }
-#services{
-  background-color: #F17C72;
-  text-align: center;
-  color: #fff;
-  padding: 70px 7px;
+
+#services {
+    background-color: #F17C72;
+    text-align: center;
+    color: #fff;
+    padding: 70px 7px;
 }
-.box-services{
-  display: inline-block;
-  width: 30%;
-  margin-top: 63px;
+
+.box-services {
+    display: inline-block;
+    width: 30%;
+    margin-top: 63px;
 }
-.text-services{
-  font-size: 35px;
-  letter-spacing: 2px;
+
+.text-services {
+    font-size: 35px;
+    letter-spacing: 2px;
 }
-footer{
-  text-align: center;
-  height: 70px;
-  background: #373B47;
-  color: white;
-  padding-top: 7px;
+
+footer {
+    text-align: center;
+    height: 70px;
+    background: #373B47;
+    color: white;
+    padding-top: 7px;
 }
-.contenido{
-  text-align: center;
-  font-weight: 7px;
-  padding:0 70px;
+
+.contenido {
+    text-align: center;
+    font-weight: 7px;
+    padding: 0 70px;
 }
+
 
 /**************************** FORMATO IMAGENES *****************************/
-#insertaImg{
-  width: 90%;
-  margin:  0 auto;
 
+#insertaImg {
+    width: 90%;
+    margin: 0 auto;
 }
 
-#insertaImg div{
- box-sizing: border-box;
- width: 360px;
- height: 310px;
- display: inline-block;
- margin-left: 30px;
+#insertaImg div {
+    box-sizing: border-box;
+    width: 360px;
+    height: 310px;
+    display: inline-block;
+    margin-left: 30px;
 }
 
-#insertaImg figure{
-box-sizing: border-box;
-display: inline-block;
-top: 30px;
-left: 30px;
-position: relative;
-width: 300px;
-height: 250px;
+#insertaImg figure {
+    box-sizing: border-box;
+    display: inline-block;
+    top: 30px;
+    left: 30px;
+    position: relative;
+    width: 300px;
+    height: 250px;
 }
 
-#insertaImg img{
-position: absolute;
-width: 300px;
-height: 200px;
-box-sizing: border-box;
-}
-
-#insertaImg figcaption{
-position: absolute;
-top: 200px;
-width:300px;
-height: 50px;
-box-sizing: border-box;
-text-align: center;
-}
-/**************************MODAL********************/
-#myImg {
+#insertaImg img {
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    box-sizing: border-box;
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s;
 }
 
-#myImg:hover {opacity: 0.7;}
+.modal img {
+    width: 60%;
+    height: 80%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
 
-/* mi modal - backgraound */
+#insertaImg img:hover {
+    opacity: 0.7;
+
+}
+
+img:hover {
+    opacity: 0.7;
+}
+
+
+
+#insertaImg figcaption {
+    position: absolute;
+    top: 200px;
+    width: 300px;
+    height: 50px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+
+/**************************MODAL********************/
+
 .modal {
     display: none;
     position: fixed;
-    z-index: 1;
-    padding-top: 100px; /* Location of the box */
+    z-index: 11;
+    padding-top: 100px;
     left: 0;
     top: 0;
-    width: 100%; /*ancho del div modal*/
-    height: 100%; /* alto del div model */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
-}
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: #7FFFD4;
+    }
+
 
 /* Contenido del modal (imagen) */
+
 .modal-content {
-    margin: auto;
+    margin: 0 500px;
+    position: absolute;
     display: block;
     width: 350px;
     max-width: 350px;
+    border-radius: 8px;
+    border: 12px #fff solid;
 }
 
 
 
 /* Animacion de aparicion */
+
 .modal-content {
     -webkit-animation-name: zoom;
     -webkit-animation-duration: 0.6s;
@@ -133,35 +163,45 @@ text-align: center;
 }
 
 @-webkit-keyframes zoom {
-    from {-webkit-transform:scale(0)}
-    to {-webkit-transform:scale(1)}
+    from {
+        -webkit-transform: scale(0)
+    }
+    to {
+        -webkit-transform: scale(1)
+    }
 }
 
 @keyframes zoom {
-    from {transform:scale(0)}
-    to {transform:scale(1)}
+    from {
+        transform: scale(0)
+    }
+    to {
+        transform: scale(1)
+    }
 }
 
-/* The Close Button */
+
+/* span para cerrar */
+
 .close {
     position: absolute;
-    top: 15px;
-    right: 35px;
-    color: #f1f1f1;
+    top: 100px;
+    right: 600px;
+    color: #7FFFD4;
     font-size: 40px;
     font-weight: bold;
     transition: 0.3s;
 }
 
-.close:hover,
-.close:focus {
-    color: #bbb;
+.close:hover, .close:focus {
+    color: #000;
     text-decoration: none;
     cursor: pointer;
 }
 
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
+
+
+@media only screen and (max-width: 700px) {
     .modal-content {
         width: 100%;
     }
