@@ -21,7 +21,6 @@ var img = document.getElementById('myImg');
 var modalImg = document.getElementById("img01");
 
 
-
 miSeccion.onclick = function(e){
     modal.style.display = "block";
     modalImg.src = e.target.src;
