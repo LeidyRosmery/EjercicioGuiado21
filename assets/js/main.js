@@ -24,9 +24,6 @@ var modal = document.getElementById('myModal');
 var miTexto = document.getElementById("textoImagen");
 var img = document.getElementById('myImg');
 var modalImg = document.getElementById("img01");
-
-// img.addEventListener('click',mostrarModal());
-
 var span = document.getElementsByClassName("close")[0];
 span.onclick = function() {
     modal.style.display = "none";
